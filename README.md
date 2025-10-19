@@ -10,7 +10,7 @@
 - **검색**: 제목이나 저자 키워드로 필터링.
 
 ## 기술 스택
-- **백엔드**: Java 21, Spring Boot 3.x, MyBatis (XML 매퍼)
+- **백엔드**: Java 21, Spring Boot 3.5, MyBatis (XML 매퍼)
 - **프론트엔드**: Thymeleaf, Bootstrap 5 (UI 개선)
 - **데이터베이스**: MariaDB
 - **빌드**: Maven
