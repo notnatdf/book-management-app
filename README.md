@@ -25,11 +25,8 @@
 
 ## 데모
 도서 목록 화면<img width="983" height="287" alt="list" src="https://github.com/user-attachments/assets/26340698-dd01-413c-9c22-55a6d577ccbd" />
-" ></image-card>
-<image-card alt="도서 추가 폼" src="<img width="197" height="187" alt="form" src="https://github.com/user-attachments/assets/f41e7792-70b7-478f-9dc8-a3e378b54d2e" />
-" ></image-card>
-<image-card alt="검색 결과" src="<img width="987" height="222" alt="search" src="https://github.com/user-attachments/assets/617074fe-4513-4373-b709-2d8594cfe15b" />
-" ></image-card>
+도서 추가 폼<img width="197" height="187" alt="form" src="https://github.com/user-attachments/assets/f41e7792-70b7-478f-9dc8-a3e378b54d2e" />
+검색 결과<img width="987" height="222" alt="search" src="https://github.com/user-attachments/assets/617074fe-4513-4373-b709-2d8594cfe15b" />
 
 ## 프로젝트 구조
 src/main/java/com/example/book_management/
