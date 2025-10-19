@@ -24,7 +24,7 @@
 5. 브라우저: http://localhost:8080/books 접속.
 
 ## 데모
-<image-card alt="도서 목록 화면" src="<img width="983" height="287" alt="list" src="https://github.com/user-attachments/assets/26340698-dd01-413c-9c22-55a6d577ccbd" />
+도서 목록 화면<img width="983" height="287" alt="list" src="https://github.com/user-attachments/assets/26340698-dd01-413c-9c22-55a6d577ccbd" />
 " ></image-card>
 <image-card alt="도서 추가 폼" src="<img width="197" height="187" alt="form" src="https://github.com/user-attachments/assets/f41e7792-70b7-478f-9dc8-a3e378b54d2e" />
 " ></image-card>
