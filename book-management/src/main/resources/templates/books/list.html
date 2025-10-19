@@ -34,6 +34,7 @@
                 <td>
                     <a th:href="@{/books/edit/{id}(id=${book.id})}" class="btn btn-sm btn-warning">편집</a>
                     <a th:href="@{/books/delete/{id}(id=${book.id})}" class="btn btn-sm btn-danger" onclick="return confirm('삭제?')">삭제</a>
+                    <a th:href="@{/books/{id}(id=${book.id})}" class="btn btn-sm btn-info">상세</a>
                 </td>
             </tr>
             </tbody>

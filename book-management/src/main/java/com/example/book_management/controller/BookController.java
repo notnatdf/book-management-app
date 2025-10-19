@@ -2,9 +2,11 @@ package com.example.book_management.controller;
 
 import com.example.book_management.model.Book;
 import com.example.book_management.service.BookService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -35,7 +37,10 @@ public class BookController {
     }
 
     @PostMapping
-    public String saveBook(@ModelAttribute Book book){
+    public String saveBook(@Valid @ModelAttribute Book book, BindingResult result){
+        if (result.hasErrors()) {
+            return "books/form";
+        }
         bookService.saveBook(book);
         return "redirect:/books";
     }
@@ -51,5 +56,12 @@ public class BookController {
     public String deleteBook(@PathVariable Integer id){
         bookService.deleteBook(id);
         return "redirect:/books";
+    }
+
+    @GetMapping("/{id}")
+    public String viewBook(@PathVariable Integer id, Model model){
+        Book book = bookService.getBookById(id);
+        model.addAttribute("book", book);
+        return "books/detail";
     }
 }

@@ -1,10 +1,16 @@
 package com.example.book_management.model;
 
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotBlank;
+
 public class Book {
     private Integer id;
+    @NotBlank(message = "제목은 필수입니다.")
     private String title;
+    @NotBlank(message = "저자는 필수입니다.")
     private String author;
     private String isbn;
+    @Min(value = 0, message = "출판년도는 0 이상이어야 합니다.")
     private Integer publishedYear;
 
     // 기본 생성자
